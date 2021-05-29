@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/splash"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:textAlignment="textStart"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/andika"
+            android:textStyle="bold"
+            android:text="Register."
+            android:paddingLeft="25dp"
+            android:textColor="@color/white"
+            android:textSize="45dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="-15dp"
+            android:textAlignment="textStart"
+            android:fontFamily="@font/andika"
+            android:text="Some things we may want."
+            android:textColor="@color/white"
+            android:textSize="17.5dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="40dp"
+            android:layout_marginBottom="20dp">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxCornerRadiusBottomStart="82dp"
+                app:boxStrokeColor="@color/white"
+                android:textColorHint="@color/white"
+                android:outlineSpotShadowColor="@color/white"
+                android:layout_gravity="center"
+                android:outlineAmbientShadowColor="@color/white"
+                app:boxCornerRadiusBottomEnd="82dp"
+                app:boxCornerRadiusTopEnd="82dp"
+                android:layout_marginBottom="20dp"
+                app:boxCornerRadiusTopStart="82dp"
+                android:inputType="phone"
+                android:hint="Name"
+                app:boxBackgroundColor="@color/transparent_text"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/name"
+                    android:layout_width="fill_parent"
+                    android:singleLine="true"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textColorHighlight="@color/white"
+                    android:textColorLink="@color/white"
+                    android:layout_height="fill_parent"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxCornerRadiusBottomStart="82dp"
+                app:boxStrokeColor="@color/white"
+                android:textColorHint="@color/white"
+                android:outlineSpotShadowColor="@color/white"
+                android:layout_gravity="center"
+                android:outlineAmbientShadowColor="@color/white"
+                app:boxCornerRadiusBottomEnd="82dp"
+                app:boxCornerRadiusTopEnd="82dp"
+                android:layout_marginBottom="20dp"
+                app:boxCornerRadiusTopStart="82dp"
+                android:inputType="phone"
+                android:hint="mail id"
+                app:boxBackgroundColor="@color/transparent_text"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/mail"
+                    android:layout_width="fill_parent"
+                    android:singleLine="true"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textColorHighlight="@color/white"
+                    android:textColorLink="@color/white"
+                    android:layout_height="fill_parent"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxCornerRadiusBottomStart="82dp"
+                app:boxStrokeColor="@color/white"
+                android:textColorHint="@color/white"
+                android:outlineSpotShadowColor="@color/white"
+                android:layout_gravity="center"
+                android:outlineAmbientShadowColor="@color/white"
+                app:boxCornerRadiusBottomEnd="82dp"
+                app:boxCornerRadiusTopEnd="82dp"
+                android:layout_marginBottom="20dp"
+                app:boxCornerRadiusTopStart="82dp"
+                android:inputType="phone"
+                android:hint="address"
+                app:boxBackgroundColor="@color/transparent_text"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/address"
+                    android:layout_width="fill_parent"
+                    android:singleLine="true"
+                    android:inputType="textPostalAddress"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textColorHighlight="@color/white"
+                    android:textColorLink="@color/white"
+                    android:layout_height="fill_parent"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@drawable/blue_button"
+                android:id="@+id/button_reg"
+                android:drawableEnd="@drawable/nex_arr_long"
+                android:padding="5dp"
+                android:textSize="20dp"
+                android:text="R E G I S T E R"
+                android:fontFamily="@font/andika"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

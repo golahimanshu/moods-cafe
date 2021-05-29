@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chatting">
+    <LinearLayout
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:background="@drawable/back_drawable"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/back"
+            android:padding="10dp"
+            android:id="@+id/back"
+            android:tint="@color/white"/>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="chat"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@color/blue"
+                android:gravity="bottom"
+                android:textSize="30dp"/>
+        </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_marginBottom="70dp"
+        android:layout_height="match_parent"
+        android:id="@+id/recycle"/>
+    <ScrollView
+        android:visibility="gone"
+        android:isScrollContainer="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_marginBottom="70dp"
+        >
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:padding="15dp"
+            android:id="@+id/chat_layout"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            >
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/text"
+        android:layout_marginEnd="70dp"
+        android:hint="Message..."
+        android:textColorHint="@color/white"
+        android:paddingLeft="40dp"
+        android:textColor="@color/white"
+        android:layout_marginRight="?attr/actionBarSize"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/transparent_edit_text" />
+
+    <LinearLayout
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="?attr/actionBarSize"
+        android:drawableTint="@color/white"
+        android:padding="15dp"
+        android:id="@+id/send"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/blue_button">
+        <ImageView
+            android:tint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/back"
+            android:rotation="180"/>
+    </LinearLayout>
+</RelativeLayout>
