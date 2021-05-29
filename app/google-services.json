@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "228655586241",
+    "project_id": "moodscafe-f5402",
+    "storage_bucket": "moodscafe-f5402.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:228655586241:android:d5ec7ad2c89e3dd398ed40",
+        "android_client_info": {
+          "package_name": "com.project.sem1.moodscafe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "228655586241-067h87pfjcal1l2d32dve0u32h6jdlj9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.project.sem1.moodscafe",
+            "certificate_hash": "1e1e72506c35d8e8f201f28ee2103d4b9f156c8d"
+          }
+        },
+        {
+          "client_id": "228655586241-6ikp0g1lh3ju3jgb9jnhudv25hidif2m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtRL-m5eqQSsZyUY8R1VcySQ95qU6eJSI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "228655586241-6ikp0g1lh3ju3jgb9jnhudv25hidif2m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
